@@ -72,6 +72,10 @@ eureka:
 # Management
 management:
   endpoint:
+    shutdown:
+      enabled: false
+    health:
+      show-details: ALWAYS
     metrics:
       enabled: true
     prometheus:
@@ -80,11 +84,6 @@ management:
     web:
       exposure:
         include: "*"
-  endpoint:
-    shutdown:
-      enabled: false
-    health:
-      show-details: ALWAYS
   metrics:
     export:
       prometheus:
