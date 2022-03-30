@@ -5,7 +5,7 @@ eureka:
   environment: development
   client:
     register-with-eureka: false
-    fetch-registry: false
+    fetch-registry: true
 
 ---
 spring:
