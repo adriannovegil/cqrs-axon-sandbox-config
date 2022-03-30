@@ -12,6 +12,8 @@ app:
       ordersWaitingValidation: orders-waiting-validation-group
 
 spring:
+  application:
+    name: catalog-command
   data:
     # Mongo
     mongodb:
@@ -21,7 +23,6 @@ spring:
       password: ${app.mongodb.password}
       database: ${app.mongodb.database}
       authentication-database: admin
-
   # Kafka
   kafka:
     producer:
@@ -45,6 +46,7 @@ axon:
     properties:
       security.protocol: PLAINTEXT
 
+# Metrics
 management:
   metrics:
     tags:
