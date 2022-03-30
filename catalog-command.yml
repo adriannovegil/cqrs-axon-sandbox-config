@@ -84,3 +84,9 @@ app:
     host: mongo
     user: ${MONGO_USER}
     password: ${MONGO_PASSWORD} # TODO use cipher
+
+eureka:
+  instance:
+    metadataMap:
+      prometheus.scrape: "true"
+      prometheus.path: "/actuator/prometheus"
